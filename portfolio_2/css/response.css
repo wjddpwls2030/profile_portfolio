@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+@media all and (max-width:1800px){
+
+    /* section1 */
+    #wrap #header .wrap .gap .container #nav >ul >li {margin:0 1.66666vw;}
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(3) .content-gap .content-wrap .form-wrap {width:33vw;}
+
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:20vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:13.5vw 4.166666667vw;}
+
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span {width:3.3333vw;height:3.3333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a {line-height:3vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a i {font-size:0.888vw;}
+}
+
+@media all and (max-width:1500px){
+    /* section1 */
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:17vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:1.6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:1.1vw;}
+
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap {padding:5.3vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h2 {font-size:1.6vw;padding-bottom:6vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h3 {font-size:1.3vw;padding-bottom:6vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content span.arrow-btn {display:block;width:4vw;height:4vw;line-height:3.7vw;}
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box  {float:left;width:50%;margin-left:12vw;}
+
+    /* 정육면체(CUBE) */
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:150px;width:350px;height:350px;transform-style:preserve-3d;transform:perspective(700px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:150px;width:350px;height:350px;transform-style:preserve-3d;transform:perspective(700px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+    
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(175px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(175px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(175px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(175px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(175px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(175px);}
+
+    /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(700px) rotate3d(0,0,0,   0deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(700px) rotate3d(0,1,0,-180deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(700px) rotate3d(0,1,0,  90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(700px) rotate3d(0,1,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(700px) rotate3d(1,0,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(700px) rotate3d(1,0,0,  90deg);}
+
+}
+
+@media all and (max-width:1200px){
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:20vw 4.166666667vw;}
+    
+
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li .text-box .text-gap {padding:2vw;}
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li .text-box .text-gap .text-wrap .text span.icon > a > i {font-size:25px;color:rgba(72,72,72,1);}
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li .text-box .text-gap .text-wrap .text h2 {color:#000;font-size: 11px;font-weight:600;padding-bottom: 15px;}
+
+
+    /* 정육면체(CUBE) */
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:200px;width:300px;height:300px;transform-style:preserve-3d;transform:perspective(600px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:200px;width:300px;height:300px;transform-style:preserve-3d;transform:perspective(600px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+    
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(150px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(150px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(150px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(150px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(150px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(150px);}
+
+    /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(600px) rotate3d(0,0,0,   0deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(600px) rotate3d(0,1,0,-180deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(600px) rotate3d(0,1,0,  90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(600px) rotate3d(0,1,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(600px) rotate3d(1,0,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(600px) rotate3d(1,0,0,  90deg);}
+}
+@media all and (max-width:1100px){
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:25vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:1.9vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:1.4vw;}
+}
+@media all and (max-width:1000px){
+    
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li {float:left;width:33.33333%;padding:15px;}
+    
+        /* 정육면체(CUBE) */
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:200px;width:250px;height:250px;transform-style:preserve-3d;transform:perspective(500px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:200px;width:250px;height:250px;transform-style:preserve-3d;transform:perspective(500px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+        
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(125px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(125px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(125px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(125px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(125px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(125px);}
+    
+        /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+    
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(500px) rotate3d(0,0,0,   0deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(500px) rotate3d(0,1,0,-180deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(500px) rotate3d(0,1,0,  90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(500px) rotate3d(0,1,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(500px) rotate3d(1,0,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(500px) rotate3d(1,0,0,  90deg);}
+    
+}
+@media all and (max-width:980px){
+
+    /* header */
+    #wrap #header {background:rgba(255,255,255, 1);} 
+    
+    #wrap #header .wrap .gap .container .mobile-btn-wrap {display:block;}    
+    #wrap #header {height:60px;}
+    #wrap #header .wrap .gap {margin:0;}
+
+   
+    /* 로고 */
+    #wrap #header .wrap .gap .container #logo  {padding:12px 0 12px 15px;}
+    
+
+    /* 사이드메뉴(ADIDE) */
+    #wrap #header .wrap .gap .container #aside {padding:22.5px 15px 22.5px 0;}
+    #wrap #header .wrap .gap .container #aside ul li a {color:rgba(0,0,0, 1);transition:all .3s;}
+    #wrap #header.addBlack .wrap .gap .container #aside ul li a {color:rgba(255,255,255, 1);transition:all .3s;}
+    #wrap #header .wrap .gap .container #aside ul li a:hover {color:rgba(0,0,0, .5);}
+    #wrap #header.addBlack .wrap .gap .container #aside ul li a:hover {color:rgba(255,255,255, .6);}
+    #wrap #header .wrap .gap .container .mobile-btn-wrap a.mobile-btn i.bar {background:#000;transition:all .3s;}
+    #wrap #header.addBlack .wrap .gap .container .mobile-btn-wrap a.mobile-btn i.bar {background:#fff;transition:all .3s;}
+
+
+    /* 모바일 스크롤  이벤트 흰색  스타일 */
+    
+    #wrap #header.addWhite .wrap .gap .container #aside ul li a {color:#000;}
+    #wrap #header.addWhite .wrap .gap .container .mobile-btn-wrap a.mobile-btn i.bar {background:#000;}
+
+
+
+    #wrap #header .wrap .gap .container #nav {display:none;background:transparent;position:fixed;top:60px;left:0;width:100%;height:100%;overflow-y:auto;text-align:left;}
+    #wrap #header .wrap .gap .container #nav > ul {width:auto;padding:0 0 60px 0;}
+    #wrap #header .wrap .gap .container #nav > ul > li {position:relative;display:block;margin:0;border-bottom:1px solid #ddd;}
+    #wrap #header .wrap .gap .container #nav > ul > li:last-child {border-bottom:0;}
+    #wrap #header .wrap .gap .container #nav > ul > li > a {line-height:50px;color:#000;text-indent:25px;background:#fff;}
+    #wrap #header .wrap .gap .container #nav > ul > li > a:focus {color:#000;}
+    #wrap #header .wrap .gap .container #nav > ul > li > a:hover {color:#000;}
+    #wrap #header .wrap .gap .container #nav >ul >li:nth-child(1) >a i {margin-left:17px;}
+    #wrap #header .wrap .gap .container #nav >ul >li >a i {display:inline-block;font-size:18px;}
+
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(3), 
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(4), 
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(5), 
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(6), 
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(7), 
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(8) {display:block;}
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(9) .content-gap .content-wrap {border-radius:0;}
+    #wrap #header .wrap .gap .container #nav ul li:nth-child(9) .content-gap .content-wrap .form-wrap {width:100vw;}
+
+        /* 서브메뉴 LNB */
+        #wrap #header .wrap .gap .container #nav > ul > li .sub {position:relative;top:0;left:0;margin-left:0;width:100%;background:#fff;text-align:left;border-radius:0;padding-bottom:20px;text-indent:40px;}
+        #wrap #header .wrap .gap .container #nav > ul > li .sub .sub-gap {padding:0;}
+    
+        #wrap #header .wrap .gap .container #nav > ul > li .sub .sub-gap > ul {width:100%;}
+        #wrap #header .wrap .gap .container #nav > ul > li .sub .sub-gap > ul > li {float:none;width:100%;}
+        #wrap #header .wrap .gap .container #nav > ul > li .sub .sub-gap > ul > li dl {width:100%;;margin:0;}
+
+
+
+
+    /* section1-페이지버튼 */
+    #wrap #main #section1 .wrap .gap .container .slide-container ul.page-btn-wrap {z-index:2;position:absolute;width:21.9vw;left:50%;margin-left:-30px;bottom:50px;text-align:center;}
+    #wrap #main #section1 .wrap .gap .container .slide-container ul.page-btn-wrap li {display:inline-block;width:3.7vw;height:4px;margin:0 4px;}
+    
+    #wrap #main #section2 .wrap .gap .container .content > ul > li:nth-child(3) .content-gap .content-wrap .back-face .back-face-gap {padding:15px;}
+
+
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li {width:50%;float: left;padding-top: 3px;}
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li:nth-child(3) {width:100%;padding-top: 3px;}
+    
+    #wrap #main #section7 .wrap .gap .container .content .btn-box input[type='radio'] {width:1.53vw;height:1.53vw;margin-right: 0.306vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box label {margin:0 2.04vw 0 0;font-size:1.6vw;}
+    /* section7 text-box */
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box {text-align: left;padding-top:5vw;}
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box h2 {font-size:2.04vw;padding-bottom:1vw;}
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box h4 {font-size:1.74vw;padding-bottom:1vw;}
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box h3 {display:inline-block;font-size:2.8vw;padding:0.5vw 0.5vw 1vw 0.5vw;}
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box .star {padding-top:1vw;}
+    #wrap #main #section7 .wrap .gap .container .content .left-box ul li .product-box .text-box .star i  {padding-right:0.3vw;font-size:1.5vw;color:#000;}
+
+    #wrap #main #section9 .wrap .gap .container .content ul li {float: left;width:50%;}
+
+    #wrap #footer {z-index:1;position:relative;padding:120px 0;background:#f5f5f5;}
+    #wrap #footer .wrap .gap .container .content ul li:nth-child(1) {float:none;display:block;width:100%;}
+    #wrap #footer .wrap .gap .container .content ul li {display:none;}
+    #wrap #footer .wrap .gap .container .content ul li:nth-child(1) .content-gap .content-wrap .sns-wrap {display:none;}
+
+    #wrap #footer .wrap .gap .container .content2 {display:block;}
+
+}
+
+@media all and (max-width:880px){
+    
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li {float:left;width:50%;padding:15px;}
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li {width:100%;float:none;}
+}
+@media all and (max-width:840px){
+    
+    /* 정육면체(CUBE) */
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:170px;width:200px;height:200px;transform-style:preserve-3d;transform:perspective(400px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:170px;width:200px;height:200px;transform-style:preserve-3d;transform:perspective(400px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+    
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(100px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(100px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(100px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(100px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(100px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(100px);}
+
+    /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(400px) rotate3d(0,0,0,   0deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(400px) rotate3d(0,1,0,-180deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(400px) rotate3d(0,1,0,  90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(400px) rotate3d(0,1,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(400px) rotate3d(1,0,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(400px) rotate3d(1,0,0,  90deg);}
+}
+@media all and (max-width:805px){
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:28vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:30vw 4.166666667vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:2.2vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:1.8vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span {width:5vw;height:5vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a {line-height:4.2vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a i {font-size:1.5vw;}
+
+    #wrap #main #section2 .wrap .gap .container .content > ul > li {width:50%;float: left;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap {margin:15px;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap {padding:8vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content {width:100%;text-align:center;color:#000;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h2 {font-size:3vw;font-weight:700;padding-bottom:8vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li:nth-child(3) .content-gap .content-wrap .back-face .back-face-gap .back-face-content h2 {padding:10vw 0;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h3 {color:#000;font-size:2.5vw;font-weight:500;display:inline-block;padding-bottom:8vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content span.arrow-btn {display:block;width:7.5vw;height:7.5vw;line-height:7vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content span.arrow-btn i {z-index:2;position:relative;color:#000;font-size:2vw;}
+
+}
+
+
+@media all and (max-width:760px){
+    #wrap #main #section4 .wrap .gap .container .title h2 {color:#000;font-size:4.7vw;font-weight: 700;}
+    #wrap #main #section6 .wrap .gap .container .content-box .content-box-gap ul li .text-box .text-gap {padding:4.21vw;}
+
+    #wrap #main #section9 .wrap .gap .container .content ul li {float:none;width:100%;}
+}
+
+@media all and (max-width:700px){
+    #wrap #main #section2 .wrap .gap .container .title h2 {color:#000;font-size:23px;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li {width:100%;float:none;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap {padding:30vw 80px;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li:nth-child(3) .content-gap .content-wrap .back-face .back-face-gap {padding:23.7vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h2 {font-size:30px;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h3 {font-size:23px;}
+
+
+
+
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:30vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:37vw 4.166666667vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:2.5vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:2.2vw;}
+
+    /* section7 text-box */
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box {text-align: left;padding-top:7.14vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box h2 {font-size:2.82vw;font-weight:700;padding-bottom:1.42vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box h4 {font-size:2.42vw;padding-bottom:1.42vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box h3 {display:inline-block;font-size:4vw;padding:0.71vw 0.71vw 1.42vw 0.71vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box .star {padding-top:1.42vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li .product-box .text-box .star i  {padding-right:0.42vw;font-size:2.14vw;color:#000;}
+}
+
+@media all and (max-width:650px){
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:29vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:39vw 4.166666667vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:2.5vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:2.1vw;}
+
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li {float:left;width:100%;padding:12.3vw;}
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li:nth-child(5),
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li:nth-child(6),
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li:nth-child(7),
+    #wrap #main #section3 .wrap .gap .container .content-box .content-box-gap > ul > li:nth-child(8) {display:none;}
+
+        /* 정육면체(CUBE) */
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:150px;width:150px;height:150px;transform-style:preserve-3d;transform:perspective(300px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:150px;width:150px;height:150px;transform-style:preserve-3d;transform:perspective(300px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+        
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(75px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(75px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(75px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(75px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(75px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(75px);}
+    
+        /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+    
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(300px) rotate3d(0,0,0,   0deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(300px) rotate3d(0,1,0,-180deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(300px) rotate3d(0,1,0,  90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(300px) rotate3d(0,1,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(300px) rotate3d(1,0,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(300px) rotate3d(1,0,0,  90deg);}
+
+   
+}
+@media all and (max-width:600px){
+    #wrap #main #section7 .wrap .gap .container .content .btn-box {margin:0 auto;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box input[type='radio'] {width:1.8vw;height:1.8vw;margin-right: 0.8vw;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box label {margin:0 12vw 0 0;font-size:3vw;line-height:200%;}
+
+    #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content .text-box .text-box-gap {padding:2.833vw;}
+    #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content .text-box .text-box-gap a h2 {font-size:2.333vw;}
+    #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content .text-box .text-box-gap a h2 i {margin-left:2vw;font-size:3.33333vw;}
+    #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content .text-box .text-box-gap h4 {font-size:2.16vw;}
+    #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content .text-box .text-box-gap h3 {font-size:2.5vw;}
+
+        
+
+
+}
+@media all and (max-width:570px){
+
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {width:33vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:60vw 4.166666667vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:3.3333333vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:3.2vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:6vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:2.8vw;}
+    /* section1-페이지버튼 */
+    #wrap #main #section1 .wrap .gap .container .slide-container ul.page-btn-wrap {z-index:2;position:absolute;width:26vw;left:50%;margin-left:-30px;bottom:50px;text-align:center;}
+    #wrap #main #section1 .wrap .gap .container .slide-container ul.page-btn-wrap li {display:inline-block;width:3.7vw;height:4px;margin:0 4px;}
+
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap {padding:23vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h2 {font-size:4.38vw;padding-bottom:15.78vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content h3 {font-size:3.5vw;padding-bottom:15.78vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content span.arrow-btn {display:block;width:10.5vw;height:10.5vw;line-height:9.8vw;}
+    #wrap #main #section2 .wrap .gap .container .content > ul > li .content-gap .content-wrap .back-face .back-face-gap .back-face-content span.arrow-btn i {font-size:3.15vw;}
+
+
+    
+    #wrap #main #section7 .wrap .gap .container .title {text-align:center}
+    #wrap #main #section7 .wrap .gap .container .title h2 {float: none;font-size: 20px;width:100%;}
+    
+    #wrap #main #section7 .wrap .gap .container {width:100%;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box input[type='radio'] {cursor: pointer;width:2.63vw;height:2.36vw;margin-right:0.52vw;border:1px solid #000;appearance:none;outline: 0;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box label {margin:0 12vw 0 0;font-size:2.8vw;color:#000;cursor: pointer;}
+    
+    
+    
+    
+}
+
+@media all and (max-width:500px){
+
+    
+    
+        /* 정육면체(CUBE) */
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li {padding-top:130px;width:50%;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:130px;width:125px;height:125px;transform-style:preserve-3d;transform:perspective(250px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:130px;width:125px;height:125px;transform-style:preserve-3d;transform:perspective(250px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+        
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(62.5px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(62.5px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(62.5px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(62.5px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(62.5px);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(62.5px);}
+    
+        /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+    
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(250px) rotate3d(0,0,0,   0deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(250px) rotate3d(0,1,0,-180deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(250px) rotate3d(0,1,0,  90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(250px) rotate3d(0,1,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(250px) rotate3d(1,0,0, -90deg);}
+        #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(250px) rotate3d(1,0,0,  90deg);}
+    
+        #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content  .img-caption-1 .btn-box a i,
+        #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content  .img-caption-2 .btn-box a i,
+        #wrap #main #section8 .wrap .gap .container .content #gallery-wrap ul li.col .gallery-gap .gallery-content  .img-caption-3 .btn-box a i {font-size:8vw;}
+
+}
+@media all and (max-width:420px){
+
+    /* section1 -text-box*/
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box {position: absolute;bottom:0;right:0;width:100%;height:50vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap {padding:10vw 4vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 {padding-bottom:4.76vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title1 h2 {font-size:4.28vw;font-weight:700;color:#000;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 {padding-bottom:4.76vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .title2 h3 {font-size:3.57vw;color:#000;line-height:150%;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span {display:block;width:7.14vw;height:7.14vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a {display: block;width:100%;height:100%;background:#fff;text-align:center;line-height:6.42vw;border-radius:50%;}
+    #wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .text-box .text-gap .text-wrap .arrow span a i {color:#000;font-size: 2.85vw;}
+    #wrap #main #section1 .wrap .gap .container .slide-container ul.page-btn-wrap {z-index:2;position:absolute;width:215px;left:30%;margin-left:-30px;bottom:42.85vw;text-align:center;}
+
+    #wrap #main #section7 .wrap .gap .container .content ul li .content-gap .content-wrap .txt-box .txt-gap .text-wrap span  {font-size:16px;}
+    #wrap #main #section7 .wrap .gap .container .content ul li .content-gap .content-wrap .txt-box .txt-gap .text-wrap p  {font-size:13px;}
+}
+@media all and (max-width:380px){
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .left-box ul li {padding-top:80px;width:50%;}
+
+    /* 정육면체(CUBE) */
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube {position:relative;float:left;margin-top:80px;width:100px;height:100px;transform-style:preserve-3d;transform:perspective(200px) rotate3d(0,0,0,   0deg);transition:all 1s;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube.addAuto {position:relative;float:left;margin-top:80px;width:100px;height:100px;transform-style:preserve-3d;transform:perspective(200px) rotate3d(0,0,0,   0deg);transition:all 1s;animation:automove 12s infinite;}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .face  {position:absolute;width:100%;height:100%;background:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp) no-repeat 50% 50%;background-size: cover;opacity:.9;}
+    
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .front  {background-image:url(../img/boeja-table-lamp-bamboo-handmade__0880568_pe613051_s5.webp);transform:rotateY(  0deg)   translateZ(50px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .back   {background-image:url(../img/upplyst-led-wall-lamp-cloud-white__0805754_pe769688_s5.webp);transform:rotateY(180deg)   translateZ(50px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .right  {background-image:url(../img/arstid-table-lamp-brass-white__0880725_pe617347_s5.jpeg);transform:rotateY( 90deg)   translateZ(50px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .left   {background-image:url(../img/taernaby-table-lamp-dark-green__0811973_pe771892_s5.webp);  transform:rotateY(-90deg) translateZ(50px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .top    {background-image:url(../img/snoeyra-led-lighting-chain-with-40-lights-indoor-battery-operated-silver-colour__0884666_pe674258_s5.webp);  transform:rotateX( 90deg) translateZ(50px);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box .cube .bottom {background-image:url(../img/vaxmyra-led-spotlight-aluminium-colour__0882231_pe654835_s5.jpeg);  transform:rotateX(-90deg) translateZ(50px);}
+
+    /* 라디오버튼 체크 : 회전시 반대 각도로 회전한다 위에서 180이라고 썼으면 여기선 -180이라고 써야함 */
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #front.addChk  ~ .cube {transform:perspective(200px) rotate3d(0,0,0,   0deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #back.addChk   ~ .cube {transform:perspective(200px) rotate3d(0,1,0,-180deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #left.addChk   ~ .cube {transform:perspective(200px) rotate3d(0,1,0,  90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #right.addChk  ~ .cube {transform:perspective(200px) rotate3d(0,1,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #top.addChk    ~ .cube {transform:perspective(200px) rotate3d(1,0,0, -90deg);}
+    #wrap #main #section7 .wrap .gap .container .content .btn-box #bottom.addChk ~ .cube {transform:perspective(200px) rotate3d(1,0,0,  90deg);}
+
+    #wrap #main #section8 .wrap .gap .container .content #nav2 ul li {display:inline-block;width:25vw;margin:10px;border-radius:50px;overflow: hidden;}
+    #wrap #main #section8 .wrap .gap .container .content #nav2 ul li a {display:block;line-height:10vw;background:#eee;font-size:4vw;color:#000;font-weight:700;padding:0 15px;transition:all .3s;}
+}
+@media all and (max-width:355px){
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box label {margin:0 11vw 0 0;font-size:2.8vw;color:#000;cursor: pointer;}
+        /* 로고 */
+        #wrap #header .wrap .gap .container #logo  {padding:12px 0 12px 5px;}
+        #wrap #header .wrap .gap .container .mobile-btn-wrap {margin-right:8px;margin-left: 5px;}
+        #wrap #header .wrap .gap .container #aside ul li {display:inline-block;margin:0 8px;}
+
+}
+@media all and (max-width:330px){
+    
+
+    #wrap #main #section7 .wrap .gap .container .content .btn-box label {margin:0 10vw 0 0;font-size:2.8vw;color:#000;cursor: pointer;}
+}

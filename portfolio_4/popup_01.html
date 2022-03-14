@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDOW POPUP</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="popWrap">
+        <div class="container">
+            <div class="gap">
+                <div class="content">
+                    <!-- 팝업창 내용 -->
+                    <div class="popup-content">
+                        <a href="#">
+                            <img src="./img/site-id-white.svg" alt="">
+                            <p>キャンプ宿泊についてご案内いたします。<br>
+                                今現在、BBQサイトとデイキャンプサイトの<br>
+                                みプレオープンしておりますが、<br>
+                                期間限定でデイキャンプエリアを<br>
+                                テントサイト（フリーサイト）<br>
+                                としてご利用いただけます。</p>
+                        </a>
+                    </div>
+                    <div class="button-box">
+                        <form name="popupForm">
+                            <span>
+                                <input type="checkbox" name="cookieChk" id="chk" value="">
+                                <label for="chk">きょう一日開かない</label>
+                            </span>
+                            <button class="close-btn">CLOSE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var $closeBtn = document.querySelector('.close-btn');
+        var today = null;
+        var txt = '';
+        //쿠키설정함수
+        function setCookieFn(name,value,expires){
+            today = new Date();
+            today.setDate(today.getDate() + expires);
+            txt += name + '=' + value + ';';
+            txt += 'expires=' + today.toUTCString() + ';';
+            document.cookie = txt;
+        }
+        //쿠키설정 버튼 클릭 이벤트
+        $closeBtn.addEventListener('click',function(e){
+            e.preventDefault();
+            if(popupForm.cookieChk.checked){
+                setCookieFn('popup_01','no',1);
+            }
+            self.close(); //창 닫기 window.close();
+        });
+    </script>
+</body>
+</html>

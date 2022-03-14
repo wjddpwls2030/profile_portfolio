@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+#wrap #header {background:#000B22;padding:22px 45px;display: flex;align-items: center;}
+#wrap #header .logo a img {width:200px;}
+#wrap #header .nav {margin-left: auto;}
+#wrap #header .nav ul {display: flex;}
+#wrap #header .nav li {margin-right: 45px;}
+#wrap #header .nav li a {color: #fff;font-size: 14px;letter-spacing: 2px;transition:all .6s;}
+#wrap #header .nav li a:hover {border-bottom: 1px solid #fff;}
+#wrap #header .link {display: flex;}
+#wrap #header .link .btn {margin-right:22px;padding: 7.5px 30px 7.5px 22px;}
+#wrap #header .link .btn.btn01 {color: #fff;font-size: 13px;padding: 10px 30px 10px 15px;border: solid 1px #fff;border-radius: 20px;position: relative;letter-spacing:2px;}
+#wrap #header .link .btn::after {right:15px;}
+#wrap #header .link .btn.btn01::after {content: "";position: absolute;background: url(../img/icon-star-white.svg)no-repeat;background-size:cover;width:10px;height:10px;right:7.5px;top:37%;}
+
+#wrap #main #section1 .container {max-width: 1140px;width: 100%;padding-right: 15px;padding-left: 15px; margin-right: auto;margin-left: auto;}
+#wrap #main #section1 .container .content {padding: 100px 0;position: relative;}
+#wrap #main #section1 .container .content .title {margin-bottom: 50px;font-size: 24px;padding-bottom: 10px;border-bottom: 1px solid #000;display: flex;align-items: center;}
+#wrap #main #section1 .container .content .title::before {content: "";background: url(../img/icon-star-gray.svg) no-repeat;background-size: contain;width: 15px;height: 15px;margin-right: 15px;}
+
+#wrap #main #section1 .row {display: flex;flex-wrap: wrap;margin:0 -15px;}
+#wrap #main #section1 .calendar-box01,
+#wrap #main #section1 .calendar-box02 {flex: 0 0 50%;max-width: 50%;padding:0 15px;}
+#wrap #main #section1 .calendar-box-content {margin-bottom: 100px;}
+#wrap #main #section1 .reservation-title {position: relative;}
+#wrap #main #section1 .reservation-title-header {background-color:#000B22;text-align: center;color: #fff;font-size: 14px;padding: 0.5rem;}
+#wrap #main #section1 .calendar-box-gap {margin-top: 1rem;}
+#wrap #main #section1 .date { text-align: center;font-size: 16px;font-weight: bold;position: relative;margin-bottom: 10px;}
+#wrap #main #section1 .date span {margin: 0 10px;}
+#wrap #main #section1 .table-box table {border: solid 1px #000B22;width: 100%;}
+#wrap #main #section1 .table-box th {font-weight: bold;font-size: 14px;}
+#wrap #main #section1 .table-box th, .table-box td {text-align: center;padding: 10px;border: 1px solid #dedede;}
+
+
+#wrap #main #section1 .button-box {width:100%;padding:10px 0;}
+#wrap #main #section1 .button-box button {width:70px;height:34px;background:#000B22;color:#fff;font-size:13px;cursor:pointer;border-radius:3px;transition:all .3s;}
+#wrap #main #section1 .button-box button:hover {background:#888;color:#fff;font-size:13px;cursor:pointer;border-radius:3px;}
+#wrap #main #section1 .button-box button.prev-btn {float:left;}
+#wrap #main #section1 .button-box button.next-btn {float:right;}
+#wrap #main #section1 .button-box button.prev-btn2 {float:left;}
+#wrap #main #section1 .button-box button.next-btn2 {float:right;}
+
+table td {width:50px;height:50px;border:0px inset #000;text-align:center;font-size:16px;color:#000;cursor:pointer;transition:color .3s;}
+table td:hover {background:#000B22;color:#fff;}
+table td.color1 {color:#ddd;}
+table td.now {color:#fff;background:#FFFF90;outline:2px solid #EDD200;outline-offset:1px;}
+table tr td:first-child ,
+table tr th:first-child {color:#ff838b;;}
+table tr td:first-child.color1 ,
+table tr th:first-child.color1 {color:#ddd;}
+table tr td:last-child ,
+table tr th:last-child {color:#6fb5ff;;}
+table tr td:last-child.color1 ,
+table tr th:last-child.color1 {color:#ddd;}
+
+#footer {padding:30px 0;background-color: #000B22;}
+#footer small {text-align: center;color: #fff;font-size: 13px;display: block;letter-spacing: 1.5px;}

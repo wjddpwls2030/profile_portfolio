@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONGO Detail Page</title>
+    <!-- <link rel="stylesheet" href="./icon/css/font-awesome.css"> -->
+    <script src="./icon/fontawesome.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+     <!-- reset.css style.css -->
+     <link rel="stylesheet" href="./css/fonts.css">
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/sub_style.css">
+     <link rel="stylesheet" href="./css/response.css">
+ 
+     <!-- 오픈소스 jQuery 1.12.4 -->
+     <script src="./js/lib/jquery.min.js"></script>
+     <script src="./js/lib/jquery.touchSwipe.js"></script>     
+     <script src="./js/lib/jquery.easing.1.3.js"></script>
+     <script src="./js/lib/prefixfree.min.js"></script>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+          <span class="header__center is-active"><em>PORTFOLIO 01</em></span>
+          <a href="./index.html">
+            <div class="menu-wrapper gnav-toggle is-loaded">
+                <div class="menu-outer">
+                    <div class="menu-inner">
+                    <span class="menu-inner__menu">HOME</span>
+                </div>
+                    <svg viewBox="0 0 80 80" width="80" height="80" class="menu-border-bg">
+                      <circle vector-effect="non-scaling-stroke" cx="40" cy="40" r="39" class="circle__progress circle__progress--path"></circle>
+                    </svg>
+                    <svg viewBox="0 0 80 80" width="80" height="80" class="menu-border">
+                      <circle vector-effect="non-scaling-stroke" cx="40" cy="40" r="39" class="circle__progress circle__progress--path"></circle>
+                    </svg>
+                </div>
+            </div>
+          </a>
+
+        </div>
+        <div id="go_top_box">
+            <div class="top on">
+                <div class="scroll_round">Go Top</div>
+                <span class="scroll_line"></span>
+                <span class="scroll_dot"></span>
+                <span class="top_line"></span>
+            </div>
+        </div>
+      </header>
+
+    <section>
+        <div class="bg"><img src="./img/hongo.jpg" alt="sub1-bg"></div>
+        <div class="width">
+            <div class="list_title">
+                <h1>01</h1>
+                <h2>Bag Shopping Mall Responsive Web</h2>
+                <button type="button" onclick="window.open('./portfolio_1/index.html')">VIEW SITE</button>
+            </div>
+            <div class="next_prev">
+                <a href="./sub-4.html"><i class="material-icons">keyboard_arrow_left</i><span>Camping Site Reactive Web</span></a>
+                <a href="./sub-2.html"><span>IKEA Homepage Renewal Project</span><i class="material-icons">keyboard_arrow_right</i></a>
+            </div>
+            <div class="mockup">
+                <img src="./img/mockup.png" alt="mockup">
+                <div class="mock_img">
+                    <img src="" alt="list1">
+                </div>
+            </div>
+            <div class="port_con">
+                <div class="list">
+                    <h1> 区分</h1>
+                    <p>Responsive Web</p>
+                </div>
+                <div class="list">
+                    <h1>寄与度</h1>
+                    <p>Design 20% / Publishing 100%</p>
+                </div>
+                <div class="list">
+                    <h1>制作領域</h1>
+                    <p>Main Page 1</p>
+                </div>
+                 <!-- <p class="list_p">주로 기능적인 면이 돋보였던 기존 페이지에서 버거킹만의 특징과 스토리를 중심으로 메인 페이지를 리디자인하였고, 배달 및 주문과 관련된 기능은 사이드
+                    네비게이션에 배치해 어떤 페이지에서도 접근이 편리하도록 하였습니다.
+                </p> -->
+                <div class="color">
+                    <h1>Main Color</h1>
+                    <span style="background-color: #000;"></span>
+                    <span style="background-color: #ce9b36;"></span>
+                    <span style="background-color: #ffead0;"></span>
+                </div>
+                <div class="detail" id="mainpage_pc">
+                    <h1>Main Page</h1>
+                    <video class="main-video" playsinline >
+                        <source src="./video/hongo.mov" type="video/mp4">
+                    </video>
+                    <span class="xspeed-box">
+                        <form name="xspeed_form">
+                            <select name="xspeed" id="xspeed">
+                            <option value=".75">x 0.75</option>
+                            <option value="1" >x 1</option>
+                            <option value="1.25">x 1.25</option>
+                            <option value="1.5" >x 1.5</option>
+                            <option value="2"selected>x 2</option>
+                            </select>
+                        </form>
+                    </span>
+                    <span class="control-box">
+                        <a href="javascript:" class="play-btn"></a>
+                    </span>
+                    <span class="replay-box">
+                        <a href="javascript:" class="replay-btn"><i class="material-icons">replay</i></a>
+                    </span>
+                </div>
+                <div class="detail_mobile">
+                    <h1>Main Page</h1>
+                    <div class="detail_img">
+                        <img src="./img/mainpage_1.png" alt="mainpage">
+                    </div>
+                </div>
+                <div class="detail">
+                    <h1>Mobile View</h1>
+                    <div class="detail_img">
+                        <img src="./img/hongo_m_1.png" alt="mob1">
+                        <img src="./img/hongo_m_2.png" alt="mob1">
+                        <img src="./img/hongo_m_3.png" alt="mob1">
+                        <img src="./img/hongo_m_4.png" alt="mob1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/Portfolio_Sub.js"></script>
+</body>
+</html>

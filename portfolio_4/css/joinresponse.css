@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+@media all and (max-width:980px){
+    #wrap #header {padding:2.2vw 4.5vw;}
+    #wrap #header .logo a img {width:20vw;}
+    #wrap #header .nav li {margin-right: 4.5vw;}
+    #wrap #header .nav li a {font-size: 1.4vw;letter-spacing: 0.2vw;}
+    #wrap #header .link .btn {margin-right:2.2vw;padding: 0.75vw 3vw 0.75vw 2.2vw;}
+    #wrap #header .link .btn.btn01 {font-size: 1.3vw;padding: 1vw 3vw 1vw 1.5vw;letter-spacing:0.2vw;}
+    #wrap #header .link .btn::after {right:1.5vw;}
+    #wrap #header .link .btn.btn01::after {width:1vw;height:1vw;right:0.75vw;top:37%;}
+
+}
+@media all and (max-width: 767.98px){
+    #wrap #main #section1 .container {
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #wrap #main #section1 .container .content {
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+    #wrap #main #section1 .container .content .table-box .table {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #D3D3D3;
+    }
+    #wrap #main #section1 .container .content .table-box table th {
+        width: 100%;
+        display: block;
+        border-right: none;
+        border-bottom: 1px solid #D3D3D3;
+    }
+    #wrap #main #section1 .container .content .table-box table td {
+        display: block;
+        padding: 0.8rem;
+    }
+}
+
+@media all and (max-width:730px){
+    #wrap #header {padding:1.7vw 3.5vw;}
+    #wrap #header .logo a img {width:16vw;}
+    #wrap #header .nav li {margin-right: 3.5vw;}
+    #wrap #header .nav li a {font-size: 1.1vw;}
+    #wrap #header .link .btn {margin-right:2vw;padding: 0.5vw 2.7vw 0.5vw 2vw;}
+    #wrap #header .link .btn.btn01 {font-size: 1vw;padding: 0.8vw 2.8vw 0.8vw 1.2vw;}
+    #wrap #header .link .btn::after {right:1.2vw;}
+    #wrap #main #section2 {padding-left:5vw;padding-right: 5vw;}
+
+}
+
+@media all and (max-width:570px){
+    #wrap #header {background:#000B22;padding:3.859vw 3.50vw;}
+    #wrap #header .logo a img {width:25vw;margin-right: 4vw;}
+    #wrap #header .nav li {margin-right: 4vw;}
+    #wrap #header .nav li a {font-size: 2.456vw;}
+    #wrap #header .link .btn {margin-right:3.85vw;padding: 1.315vw 5.263vw 1.315vw 3.85vw;}
+    #wrap #header .link .btn.btn01 {font-size: 2.280vw;padding: 1.754vw 5.263vw 1.754vw 2.631vw;}
+    #wrap #header .link .btn::after {right:2.631vw;}
+    #wrap #header .link .btn.btn01::after {width:10px;height:10px;right:1.315vw;top:37%;}
+
+    .container {max-width: 540px;}
+}
+@media all and (max-width:550px){
+    #wrap #header .nav li a {font-size: 0.5vw;}
+}
